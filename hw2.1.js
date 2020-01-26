@@ -41,11 +41,12 @@ do {
 let ageOut;
 let monthOut;
 let adult;
+let currentmonth = 1;
 if (monthIn === 1){
     ageOut = 2020 - ageIn; 
     monthOut = 0;
 } else if( 1 < monthIn && monthIn <= 12){
-    ageOut = 2020 - ageIn -1;
+    ageOut = 2020 - ageIn - currentmonth;
     monthOut = 13 - monthIn;
 };
  if (ageIn >=18){
