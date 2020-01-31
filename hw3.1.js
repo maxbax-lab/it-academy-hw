@@ -1,13 +1,13 @@
-let Arr = [1,2,9,4,5,6,7,8];
+let arr = [1,2,9,4,5,6,7,8];
 
-function maxArrayElement (Arr){
-    let maxElement = Arr[0];
-    for (let i = 0; i < Arr.length; i++){
-        if(maxElement < Arr[i]){
-            maxElement = Arr[i]
+function maxArrayElement (arr){
+    let maxElement = arr[0];
+    for (let i = 0; i < arr.length; i++){
+        if(maxElement < arr[i]){
+            maxElement = arr[i]
         }
     }
     return maxElement;
 }
-let max = maxArrayElement(Arr);
+let max = maxArrayElement(arr);
 console.log(max);
