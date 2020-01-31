@@ -24,9 +24,9 @@ function deepEqual(objOne, objTwo){
         for (let i = 0; i < objOneKeyArr.length; i++){          
             for (let j = 0; j < objTwoKeyArr.length; j++){               
                 if (objOneKeyArr[i] === objTwoKeyArr[j] && objOneValueArr[i] === objTwoValueArr[j]){
-                   return "true"
+                   return "true";
                 } else {
-                    return "false"
+                    return "false";
                 }              
             }
         }
