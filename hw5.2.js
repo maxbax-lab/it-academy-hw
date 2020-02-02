@@ -1,33 +1,35 @@
-const objOne = {
-    name: "Andrew",
-    age: 20,
-    car: "Audi",
+const a = {
+    name: 1,
+    age: 2,
+    car: ["a",["b","c"]],
 };
-const objTwo = {
-    name: "Kate",
-    car: "BMW",
-    age: 20,
-
+const b = {
+    name: 1,
+    age: 2,
+    car: ["a",["b","c"]],
 };
-const objOneKeyArr = (Object.keys(objOne));
 
-function deepEqual(objOne, objTwo){
-    const objOneKeyArr = Object.keys(objOne);
-    const objTwoKeyArr = Object.keys(objTwo);
-    const objOneValueArr = Object.values(objOne);
-    const objTwoValueArr = Object.values(objTwo);
-    if (objOneKeyArr.length != objTwoKeyArr.length){
-        return "false";
-    } else if (objOneKeyArr.length = objTwoKeyArr.length) {
-        for (let i = 0; i < objOneKeyArr.length; i++){          
-            for (let j = 0; j < objTwoKeyArr.length; j++){               
-                if (objOneKeyArr[i] === objTwoKeyArr[j] && objOneValueArr[i] === objTwoValueArr[j]){
-                   return "true";
-                } else {
-                    return "false";
-                }              
-            }
+function deepEqual(a, b){
+    
+    let aKey = Object.keys(a);
+    let bKey = Object.keys(b);
+
+    if(a === b){
+        return true;
+
+    }else if ((typeof a == "object" && a != null) && (typeof b == "object" && b != null)){
+        if (aKey.length != bKey.length){
+            return false;
         }
+        for(var key in a){
+            if (!deepEqual(a[key],b[key])){
+                return false;
+            }                     
+        }
+        return true;     
     }
+    return false
 }
-console.log (deepEqual(objOne, objTwo));
+
+
+console.log (deepEqual(a, b));
