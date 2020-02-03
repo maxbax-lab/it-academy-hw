@@ -18,7 +18,7 @@ function deepEqual(a, b){
         return true;
 
     }else if ((typeof a === "object" && a !== null) && (typeof b === "object" && b !== null)){
-        if (aKey.length != bKey.length){
+        if (aKey.length !== bKey.length){
             return false;
         }
         for(var key in a){
