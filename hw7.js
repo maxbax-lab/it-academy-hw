@@ -10,7 +10,7 @@ function print (userId, userLocation, userBrowser) {
 
 function myBind (func, context, ...args){
     return function(...rest){
-        func.apply(context, args.concat(rest));
+        return func.apply(context, args.concat(rest));
     }
 }
 myBind(print,person,333444, "USA")("safari")
