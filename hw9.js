@@ -31,7 +31,7 @@ function HashStorageFunc(){
 // console.log(newCocktail.deleteValue("состав"))
 
 function HashStorageMixer() {
-    HashStorageFunc.apply(this, arguments);
+    HashStorageFunc.apply(this);
 
     let parentgetValue = this.getValue;
     this.getValue = function(key) {
@@ -60,7 +60,7 @@ let newCocktail2 = new HashStorageMixer();
 // console.log(newCocktail2.mixing());
 
 function HashStorageBarTender() {
-    HashStorageFunc.apply(this, arguments);
+    HashStorageFunc.apply(this);
 
     let parentgetValue = this.getValue;
     this.getValue = function(key) {
