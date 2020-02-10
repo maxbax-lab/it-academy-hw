@@ -88,8 +88,6 @@ function HashStorageBarTender() {
 
 let newCocktail3 = new HashStorageBarTender();
 
-
-
 console.log(newCocktail3.question());
 newCocktail3.addValue("заказ1", "'просто виски с яблочным соком и льдом'");
 console.log(newCocktail3.getValue("заказ1"));
