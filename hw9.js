@@ -35,7 +35,7 @@ function HashStorageMixer() {
 
     let parentgetValue = this.getValue;
     this.getValue = function(key) {
-        parentgetValue.call(this);
+        parentgetValue.call(this,key);
         return  (`ингредиент: ${this.cocktail[key]}`);
     }
 
@@ -64,7 +64,7 @@ function HashStorageBarTender() {
 
     let parentgetValue = this.getValue;
     this.getValue = function(key) {
-        parentgetValue.call(this);
+        parentgetValue.call(this,key);
         return  (`принимаем заказ: ${this.cocktail[key]}`);
     }
 
