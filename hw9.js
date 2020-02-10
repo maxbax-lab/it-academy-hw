@@ -69,11 +69,11 @@ function HashStorageBarTender() {
     }
 
     this.question = function() {
-        return "какой вы бы хотели заказать коктейл?"
+        return "какой вы бы хотели заказать коктейл?";
     }
 
     this.phrase = function() {
-        return "если не знаете какой коктейл выбрать, то попробуйте наш фирменный"
+        return "если не знаете какой коктейл выбрать, то попробуйте наш фирменный";
     }
 
     this.mixing = function() {
@@ -81,7 +81,7 @@ function HashStorageBarTender() {
         return "замешиваем...";
      }
      function onReady() {
-        console.log( 'Коктейл готов! Приятного вечера!' );
+        console.log("Коктейл готов! Приятного вечера!");
       }
     
 }
