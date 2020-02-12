@@ -38,10 +38,10 @@ let newCocktail2= new HashStorageMixer();
 class HashStorageBarTender extends HashStorage {
 
     question() {
-        return "какой вы бы хотели заказать коктейл?"
+        return "какой вы бы хотели заказать коктейл?";
     }
     phrase() {
-        return "если не знаете какой коктейл выбрать, то попробуйте наш фирменный"
+        return "если не знаете какой коктейл выбрать, то попробуйте наш фирменный";
     }
     mixing() {
         setTimeout(onReady, 1000);
