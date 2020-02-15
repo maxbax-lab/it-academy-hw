@@ -1,9 +1,7 @@
-let arr = [1,2,3,33,15,10,56];
+let arr =[1,2,3,4,6,22,1,33,55];
 
-console.log (arr.filter (item => (1 <= item && item <= 16)))
+function inRange (min,max) {
+    return item => (item >= min && item <= max);
+}
 
-console.log (arr.filter (function(item) {
-    if(1 <= item && item <= 16){
-        return arr;
-    }
-}))
+console.log(arr.filter(inRange(2,10)));
