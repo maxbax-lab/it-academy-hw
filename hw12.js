@@ -28,138 +28,136 @@ function createForm(form) {
     var form2 = document.getElementById("form2"); 
     switch (form) {
     case formDef1:
-        if(formDef1[0].label){
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let siteNameText = document.createTextNode("Название сайта: ");
+            let siteNameText = document.createTextNode(formDef1[0].label);
             label.appendChild(siteNameText);
             let siteName = document.createElement("input");
             label.appendChild(siteName);
             siteName.setAttribute("type", "text");
-            siteName.setAttribute("style","margin-left: 37px", "width: 300px");
+            siteName.setAttribute("style","margin-left: 42px", "width: 300px");
             siteName.setAttribute("name","sitename"); 
         };
-        if(formDef1[1].label){
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let urlText = document.createTextNode("URL сайта: ");
+            let urlText = document.createTextNode(formDef1[1].label);
             label.appendChild(urlText);
             let url = document.createElement("input");
             label.appendChild(url);
             url.setAttribute("type", "text");
-            url.setAttribute("style","margin-left: 68px", "width: 300px");
+            url.setAttribute("style","margin-left: 74px", "width: 300px");
             url.setAttribute("name","url"); 
         };
-        if(formDef1[2].label){
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let visitorsText = document.createTextNode("Посетителей в сутки: ");
+            let visitorsText = document.createTextNode(formDef1[2].label);
             label.appendChild(visitorsText);
             let visitors = document.createElement("input");
             label.appendChild(visitors);
             visitors.setAttribute("type", "text");
-            visitors.setAttribute("style","width: 145px");
+            visitors.setAttribute("style","margin-left: 5px","width: 145px");
             visitors.setAttribute("name","visitors"); 
         };
-        if(formDef1[3].label){
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let emailText = document.createTextNode("email для связи: ");
+            let emailText = document.createTextNode(formDef1[3].label);
             label.appendChild(emailText);
             let email = document.createElement("input");
             label.appendChild(email);
             email.setAttribute("type", "text");
-            email.setAttribute("style","margin-left: 39px", "width: 300px");
+            email.setAttribute("style","margin-left: 34px", "width: 300px");
             email.setAttribute("name","email"); 
         };
-        if(formDef1[4].label1){
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let catalogText = document.createTextNode("Рубрика каталога: ");
+            let catalogText = document.createTextNode(formDef1[4].label);
             label.appendChild(catalogText);
             let heading = document.createElement("select");
             heading.setAttribute("name", "division");
-            heading.setAttribute("style", "margin-left: 23px");
+            heading.setAttribute("style", "margin-left: 27px");
             label.appendChild(heading);
-            if(formDef1[4].variants[0]){
+           {
                 let option1 = document.createElement("option");
                 heading.appendChild(option1);
-                let health = document.createTextNode("здоровье");
+                let health = document.createTextNode(formDef1[4].variants[0].text);
                 option1.setAttribute("value", "1");
                 option1.appendChild(health);
             };
-            if(formDef1[4].variants[1]){
+            {
                 let option2 = document.createElement("option");
                 heading.appendChild(option2);
-                let home = document.createTextNode("домашний уют");
+                let home = document.createTextNode(formDef1[4].variants[1].text);
                 option2.setAttribute("value", "2");
                 option2.appendChild(home);
             };
-            if(formDef1[4].variants[2]){
+            {
                 let option3 = document.createElement("option");
                 heading.appendChild(option3);
-                let appliances = document.createTextNode("бытовая техника");
+                let appliances = document.createTextNode(formDef1[4].variants[2].text);
                 option3.setAttribute("value", "3");
                 option3.appendChild(appliances);
             };
         };
-        if(formDef1[5].label1){
+           {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let catalogText = document.createTextNode("Размещение: ");
+            let catalogText = document.createTextNode(formDef1[5].label);
             label.appendChild(catalogText);
-          
+            
             let radioButton1 = document.createElement("input");
             radioButton1.setAttribute('type', 'radio');
             radioButton1.setAttribute("value", "1");
             radioButton1.setAttribute('name', "payment");
             radioButton1.setAttribute("style", "margin-left: 59px");
             label.appendChild(radioButton1);
-            if(formDef1[5].variants[0]){
-                let free = document.createTextNode("бесплатное");
-                label.appendChild(free);
-            };
+          
+            let free = document.createTextNode(formDef1[5].variants[0].text);
+            label.appendChild(free);
             
             let radioButton2 = document.createElement("input");
             radioButton2.setAttribute('type', 'radio');
             radioButton2.setAttribute("value", "2");
             radioButton2.setAttribute('name', "payment");
-            radioButton2.setAttribute("style", "margin-left: 100px");
+            radioButton2.setAttribute("style", "margin-left: 50px");
             label.appendChild(radioButton2);
-            if(formDef1[5].variants[1]){
-                let paid = document.createTextNode("платное");
-                label.appendChild(paid);
-            };
+
+            let paid = document.createTextNode(formDef1[5].variants[1].text);
+            label.appendChild(paid);
           
             let radioButton3 = document.createElement("input");
             radioButton3.setAttribute('type', 'radio');
             radioButton3.setAttribute("value", "3");
             radioButton3.setAttribute('name', "payment");
-            radioButton3.setAttribute("style", "margin-left: 100px");
+            radioButton3.setAttribute("style", "margin-left: 50px");
             label.appendChild(radioButton3);
-            if(formDef1[5].variants[2]){
-                let vip = document.createTextNode("VIP");
-                label.appendChild(vip);
-            };
-        };
-        if (formDef1[6].label) {
+             
+            let vip = document.createTextNode(formDef1[5].variants[2].text);
+            label.appendChild(vip);
+
+           };
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let review = document.createTextNode("Разрешить отзывы: ");
+            let review = document.createTextNode(formDef1[6].label);
             label.appendChild(review);
             let allowReviews = document.createElement("input");
             allowReviews.setAttribute("type", "checkbox");
@@ -168,21 +166,21 @@ function createForm(form) {
             allowReviews.setAttribute("checked","true");
             label.appendChild(allowReviews);
         };
-        if (formDef1[7].label) {
+        {
             let label = document.createElement("label");
             form1.appendChild(label);
             let br = document.createElement("br");
             form1.appendChild(br);
-            let description = document.createTextNode("Описание сайта: ");
+            let description = document.createTextNode(formDef1[7].label);
             label.appendChild(description);
             label.appendChild(br);
             let siteDescription = document.createElement("textarea");
-            siteDescription.setAttribute("style","width: 650px; height: 50px");
+            siteDescription.setAttribute("style","width: 500px; height: 50px");
             siteDescription.setAttribute("name","description");
             label.appendChild(siteDescription);
           
         };
-        if (formDef1[8].label) {
+        {
             let br = document.createElement("br");
             form1.appendChild(br);
             let publish = document.createElement("input");
@@ -193,40 +191,40 @@ function createForm(form) {
         break;
 
     case formDef2:                   
-        if (formDef2[0].label) {
+         {
             let hr = document.createElement("hr");
             form2.appendChild(hr);
             let label = document.createElement("label");
             form2.appendChild(label);
             let br = document.createElement("br");
             form2.appendChild(br);
-            let surnameText = document.createTextNode("Фамилия: ");
+            let surnameText = document.createTextNode(formDef2[0].label);
             label.appendChild(surnameText);
             let surname = document.createElement("input");
             surname.setAttribute("type", "text");
-            surname.setAttribute("style","margin-left: 80px; width: 300px");
+            surname.setAttribute("style","margin-left: 78px; width: 300px");
             surname.setAttribute("name","lastname");
             label.appendChild(surname);
         };
-        if (formDef2[1].label) {
+        {
             let label = document.createElement("label");
             form2.appendChild(label);
             let br = document.createElement("br");
             form2.appendChild(br);
-            let nameText = document.createTextNode("Имя: ");
+            let nameText = document.createTextNode(formDef2[1].label);
             label.appendChild(nameText);
             let name = document.createElement("input");
             name.setAttribute("type", "text");
-            name.setAttribute("style","margin-left: 112px; width: 300px");
+            name.setAttribute("style","margin-left: 111px; width: 300px");
             name.setAttribute("name","firstname");
             label.appendChild(name);
         };
-        if (formDef2[2].label) {
+        {
             let label = document.createElement("label");
             form2.appendChild(label);
             let br = document.createElement("br");
             form2.appendChild(br);
-            let secondnameText = document.createTextNode("Отчество: ");
+            let secondnameText = document.createTextNode(formDef2[2].label);
             label.appendChild(secondnameText);
             let secondname = document.createElement("input");
             secondname.setAttribute("type", "text");
@@ -234,12 +232,12 @@ function createForm(form) {
             secondname.setAttribute("name","secondname");
             label.appendChild(secondname);
         };
-        if (formDef2[3].label) {
+        {
             let label = document.createElement("label");
             form2.appendChild(label);
             let br = document.createElement("br");
             form2.appendChild(br);
-            let ageText = document.createTextNode("Возраст: ");
+            let ageText = document.createTextNode(formDef2[3].label);
             label.appendChild(ageText);
             let age = document.createElement("input");
             age.setAttribute("type", "text");
@@ -247,7 +245,7 @@ function createForm(form) {
             age.setAttribute("name","age");
             label.appendChild(age);
         };
-        if (formDef2[4].label) {
+        {
             let signup = document.createElement("input");
             signup.setAttribute("type", "submit");
             signup.setAttribute("value", "Зарегистрироваться");
