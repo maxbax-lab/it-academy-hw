@@ -24,8 +24,8 @@ createForm(formDef2);
 
 
 function createForm(form) {
-    var form1 = document.getElementById("form1");           
-    var form2 = document.getElementById("form2"); 
+    let form1 = document.getElementById("form1");           
+    let form2 = document.getElementById("form2"); 
     switch (form) {
     case formDef1:
         {
