@@ -1,0 +1,52 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+     font-size: 13px;
+}  
+form {
+    width: 500px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 50px auto 50px auto;
+    padding: 25px;
+}    
+div { 
+    display: flex;
+    margin-bottom: 10px;
+}
+div>input{
+  display: inline-block;
+  width: 200px;
+  margin-left: 1px;
+}
+div label input{
+  margin-left: 25px;
+}
+label{
+  display: inline-block;
+  width: 150px;
+}
+select {
+    position: relative;
+    box-sizing: border-box;
+}
+textarea{
+    display: block;
+    width: 300px;
+    min-height: 70px;
+    max-height: 200px;
+    max-width: 300px;
+  
+}
+input[type="submit"]{
+  margin-top: 15px;
+  margin-bottom: -20px;
+  background-color: #2870db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: opacity .25s ease-in-out;
+}
+input[type="submit"]:hover{
+  opacity: 0.8;
+}
