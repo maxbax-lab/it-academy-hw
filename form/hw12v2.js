@@ -28,7 +28,6 @@ createForm(form2, formDef2);
 
 function createForm(form, array) {
     array.forEach(item => {
-
         let div = document.createElement('div');
         form.appendChild(div);
 
@@ -51,7 +50,6 @@ function createForm(form, array) {
                 let option = document.createElement('option');
                 let optionText = document.createTextNode(item.text);
                 option.value = item.value;
-                
                 select.appendChild(option).appendChild(optionText);
             });
             div.appendChild(label);
@@ -73,8 +71,7 @@ function createForm(form, array) {
             });
         } else if (item.kind === 'memo') {
             let textarea = document.createElement('textarea');
-            textarea.name = item.name;
-        
+            textarea.name = item.name;   
             div.appendChild(label);
             div.appendChild(textarea);;
         } else if (item.kind === 'submit') {
