@@ -39,6 +39,8 @@ function createForm(form, array) {
         let input = document.createElement('input');
         input.type = item.kind;
         input.name = item.name;
+        
+        input.classList.add(`${item.name}`);
 
         if (item.kind === 'combo') {
             let select = document.createElement('select');
