@@ -83,7 +83,6 @@ function createForm(form, array) {
         } else {
             div.appendChild(label);
             div.appendChild(input);
-        }
-        
+        }      
     });
 }
