@@ -48,15 +48,11 @@ function createForm(form, array) {
                 let option = document.createElement('option');
                 let optionText = document.createTextNode(item.text);
                 option.value = item.value;
-                
                 select.appendChild(option).appendChild(optionText);
             });
-
-            div.append(label, select);
         } else if (item.kind === 'radio') {
             
             div.appendChild(label);
-        
             item.variants.forEach(value => {    
                 input = document.createElement('input');
                 input.type = item.kind;
@@ -82,7 +78,6 @@ function createForm(form, array) {
         } else {
             div.appendChild(label);
             div.appendChild(input);
-        }
-        
+        }   
     });
 }
