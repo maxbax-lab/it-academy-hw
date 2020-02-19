@@ -39,30 +39,33 @@ function createForm(form, array) {
         let input = document.createElement('input');
         input.type = item.kind;
         input.name = item.name;
-        
-        input.classList.add(`${item.name}`);
 
+        input.classList.add(`${item.name}`);
+        
         if (item.kind === 'combo') {
             let select = document.createElement('select');
+            select.classList.add('select');
             select.name = item.name;
-
+        
             item.variants.forEach(item => {
                 let option = document.createElement('option');
                 let optionText = document.createTextNode(item.text);
                 option.value = item.value;
+                
                 select.appendChild(option).appendChild(optionText);
             });
+            div.appendChild(label);
+            div.appendChild(select);
         } else if (item.kind === 'radio') {
-            
             div.appendChild(label);
             item.variants.forEach(value => {    
-                input = document.createElement('input');
+                let input = document.createElement('input');
                 input.type = item.kind;
                 input.name = item.name;
                 input.value = value.value;
 
-                label = document.createElement('label');
-                labelText = document.createTextNode(value.text);
+                let label = document.createElement('label');
+                let labelText = document.createTextNode(value.text);
 
                 label.appendChild(input);
                 label.appendChild(labelText);
@@ -80,6 +83,7 @@ function createForm(form, array) {
         } else {
             div.appendChild(label);
             div.appendChild(input);
-        }   
+        }
+        
     });
 }
