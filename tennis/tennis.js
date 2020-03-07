@@ -197,7 +197,7 @@ function move() {
     player1.create();
     player2.create();
 
-    window.setTimeout(move, 20); 
+    setTimeout(move, 20); 
 }
 move();
 
