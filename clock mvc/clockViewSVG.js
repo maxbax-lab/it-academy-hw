@@ -110,9 +110,9 @@ export function ViewSvg() {
     let handHour = svg.querySelector('.handHour');
     let handMin = svg.querySelector('.handMin');
     let handSec = svg.querySelector('.handSec');
-    let angleSec = sec*6/180*Math.PI;
-    let angleMin = min*6/180*Math.PI;
-    let angleHour =(hour*30+ 0.5*min)/180*Math.PI ;
+    let angleSec = sec*6;
+    let angleMin = min*6;
+    let angleHour = hour*30 ;
     handSec.setAttribute('transform',`rotate(${angleSec} ${svgWidth / 2} ${svgHeight / 2} )`);
     handMin.setAttribute('transform',`rotate(${angleMin} ${svgWidth / 2} ${svgHeight / 2})`);
     handHour.setAttribute('transform',`rotate(${angleHour} ${svgWidth / 2} ${svgHeight / 2})`);
