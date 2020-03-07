@@ -10,10 +10,10 @@ export class Controller {
   }
   init(field) {
     this.field = field;
-    window.addEventListener('load', this.startClock());
+    window.addEventListener('load', this.startClock);
     this.start = this.field.querySelector('.start');
-    this.start.addEventListener('click', this.startClock());
+    this.start.addEventListener('click', this.startClock);
     this.stop = this.field.querySelector('.stop');
-    this.stop.addEventListener('click', this.stopClock());
+    this.stop.addEventListener('click', this.stopClock);
   }
 }
