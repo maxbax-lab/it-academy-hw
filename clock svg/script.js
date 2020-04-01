@@ -53,18 +53,18 @@ function createClock(){
         group.appendChild(numbers);
     }
     let hour = document.createElementNS('http://www.w3.org/2000/svg','line');
-    hour.setAttribute("style", "stroke:black; stroke-width: 2.5%; stroke-linecap:round");
+    hour.setAttribute("style", "stroke:red; stroke-width: 0.9%; stroke-linecap:round");
     hour.setAttribute('x1',cx);
-    hour.setAttribute('y1',cy*1.4);
+    hour.setAttribute('y1',cy*1.65);
     hour.setAttribute('x2',cx);
     hour.setAttribute('y2',cy);
     hour.id = 'hour';
     clock.appendChild(hour);
 
     let min = document.createElementNS('http://www.w3.org/2000/svg','line');
-    min.setAttribute("style", "stroke:red; stroke-width: 0.9%; stroke-linecap:round");
+    min.setAttribute("style", "stroke:black; stroke-width: 2.5%; stroke-linecap:round");
     min.setAttribute('x1',cx);
-    min.setAttribute('y1',cy*1.65);
+    min.setAttribute('y1',cy*1.4);
     min.setAttribute('x2',cx);
     min.setAttribute('y2',cy);
     min.id = 'min';
