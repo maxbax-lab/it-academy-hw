@@ -4,8 +4,6 @@ const cx = width / 2;
 const cy = height / 2;
 const radius = (width / 2) - 10;
 
-createClock()
-
 let canvasClock = document.createElement('canvas');
 canvasClock.id = 'clock';
 canvasClock.width = 500;
@@ -97,7 +95,7 @@ function createClock(){
     context.font= '35px Sans-Serif';
     context.closePath();
 }
-
+createClock();
 setInterval(function(){
     createClock();
   },1000);
