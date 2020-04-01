@@ -4,6 +4,9 @@ const cx = width / 2;
 const cy = height / 2;
 const radius = (width / 2) - 10;
 
+function(){
+    createClock()}
+
 let canvasClock = document.createElement('canvas');
 canvasClock.id = 'clock';
 canvasClock.width = 500;
