@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style/mainStyle.css"/>
+    <link rel="stylesheet" href="/style/filterStyle.css"/>
+    <link rel="stylesheet" href="/style/register.css">
+    <link rel="stylesheet" href="/style/listingsStyle.css">
+    <link rel="stylesheet" href="/style/markerStyle.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v0.10.1/mapbox-gl-language.js'></script>
+</head>
+<body>
+    <header>
+      <!--navigation-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+              <a class="navbar-brand" href="main.html">
+                  <img src="/img/logo_transparent.png" width="30" height="30">
+                  Find Place
+              </a>
+              <input onkeyup="mySearch()" id="Search" class="search__input" type="search" placeholder="Search...">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <button id ="login" class="btn btn-outline-light ml-auto mr-3" type="button" onclick="document.getElementById('id02').style.display='block'">Log in</button>
+              <button id="register" class="btn btn-outline-warning" type="button" onclick="document.getElementById('id01').style.display='block'">Register</button>
+            </div>
+          </nav>
+    </header>
+    <main class="container-fluid">
+      <!--list and map-->
+        <div class="row">
+          <div id="filter" class="col-4 sidebar pad2" style='height: 1000px'>
+            <div class='heading'>
+              <h2>Recommended Locations</h2>
+              <div id="buttons">
+                <button id="bars" class="category btn btn-primary" type="button" onclick="switchToBarPage()">Bars</button>
+                <button id="restaurants" class="category btn btn-primary" type="button" onclick="switchToRestaurantsPage()">Restaurants</button> 
+                <button id="coffeepoints" class="category btn btn-primary" type="button" onclick="switchToCoffeepointsPage()">Coffeepoints</button>
+                <button id="entertainments" class="category btn btn-primary" type="button" onclick="switchToEntertainmentsPage()">Entertainments</button>  
+              </div>             
+            </div>
+            <div id='listings' class='listings'></div>
+          </div>
+          <div id='map' class="col-8 pad2" style='height: 1000px'>
+          </div>
+        </div>
+      </div>
+      <!--register js modal window-->
+      <div id="id01" class="modal">
+        <form id="form1" class="modal-content animate" action="http://fe.it-academy.by/TestForm.php" method="post">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </form>
+        </div>
+      <!--login html modal window-->
+      <div id="id02" class="modal">
+        <form id="form2" class="modal-content animate" action="http://fe.it-academy.by/TestForm.php" method="post">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <div class="container-login">
+            <div class="logo">
+              <img src="/img/logo_transparent.png" width="30" height="30">
+              Find Place
+            </div>
+            <div class="input-div username">
+              <span class="unam">Username</span>
+              <input type="text" name="uname" required>
+            </div>
+            <div class="input-div password">
+              <span class="pass">Password</span>
+              <input type="password" name="psw" required>
+            </div>
+             <br>
+            <label class="remember">
+             <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <span class="psw"> <a href="#">Forgot password?</a></span>
+          </div>
+        <button type="submit" class="login-form_button">Login</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+    </footer>  
+    <script src="/js/map2.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/register.js"></script>
+    <script src="/js/filterevent.js"></script>
+</body>
+</html>
