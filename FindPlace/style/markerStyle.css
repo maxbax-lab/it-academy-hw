@@ -1,0 +1,190 @@
+
+.marker {
+    background-image: url('/mapbox-markers/img/mapbox-icon.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+.mapboxgl-popup {
+    max-width: 200px;
+  }
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    border: solid 1px #0275d8;
+    
+}
+
+  /* Marker tweaks */
+.mapboxgl-popup-close-button {
+    display: none;
+}
+  
+.mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    padding: 0;
+    width: 180px;
+    height: 110px;
+}
+  
+.mapboxgl-popup-content-wrapper {
+    padding: 1%;
+}
+  
+.mapboxgl-popup-content h5 {
+    background: #0686f7;
+    color: #fff;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    margin-top: -15px;
+}
+  
+.mapboxgl-popup-content h4 {
+    margin: 0;
+    display: block;
+    padding: 10px;
+    font-weight: 400;
+    float: left;
+}
+  
+.mapboxgl-popup-content div {
+    padding: 10px;
+}
+  
+.mapboxgl-container .leaflet-marker-icon {
+    cursor: pointer;
+}
+  
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+    margin-top: 15px;
+}
+  
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+    border-bottom-color: #0275d8;
+}
+#bar0 {
+    content:url('/img/photos/bars/alch/1.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#bar1 {
+    content:url('/img/photos/bars/huligan/2.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#bar2 {
+    content:url('/img/photos/bars/sweet/3.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#bar3 {
+    content:url('/img/photos/bars/id/4.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#bar4 {
+    content:url('/img/photos/bars/dot/5.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#restaurant5 {
+    content:url('/img/photos/restaurants/Grand/1.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#restaurant6 {
+    content:url('/img/photos/restaurants/Falcone/3.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#restaurant7 {
+    content:url('/img/photos/restaurants/CafedeParis/2.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#restaurant8 {
+    content:url('/img/photos/restaurants/TheView/4.jpeg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#coffeepoint9 {
+    content:url('/img/photos/coffeeoints/zerno/2.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#coffeepoint10 {
+    content:url('/img/photos/coffeeoints/mobydick/3.jpeg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#coffeepoint11 {
+    content:url('/img/photos/coffeeoints/surf/4.jpeg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#coffeepoint12 {
+    content:url('/img/photos/coffeeoints/kavka/1.jpeg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#entertainment13 {
+    content:url('/img/photos/entertainment/ww2/1.jpg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#entertainment14 {
+    content:url('/img/photos/entertainment/silverscreen/2.jpg');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+#entertainment15 {
+    content:url('/img/photos/entertainment/theatre/3.jpg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#entertainment16 {
+    content:url('/img/photos/entertainment/artgallery/4.jpg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+

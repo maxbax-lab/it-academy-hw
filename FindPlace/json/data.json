@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.55618201, 53.90237076]
+      },
+      "properties": {
+        "title": "Alcoholy Bar",
+        "phoneFormatted": "",
+        "phone": "",
+        "address": "International str. 13",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Cocktail-Bar, $$",
+        "type": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.57496284, 53.88969825]
+      },
+      "properties": {
+        "title": "Hooligan",
+        "phoneFormatted": "8(017) 327-10-45",
+        "phone": "80173271045",
+        "address": "October str. 16",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Music-Bar, $",
+        "type": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5560348, 53.8969980]
+      },
+      "properties": {
+        "title": "Sweet & Sour",
+        "phoneFormatted": " 8(029) 628-25-93",
+        "phone": "80296282593",
+        "address": "Karl Marks str. 14",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Bar, $$",
+        "type": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5768265, 53.9077275]
+      },
+      "properties": {
+        "title": "ID Bar",
+        "phoneFormatted": "8 (044) 793-13-96",
+        "phone": "80447931396",
+        "address": "Zaharova str. 19",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Bar, $$",
+        "type": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.547961, 53.9082803]
+      },
+      "properties": {
+        "title": "BAR:DOT 21",
+        "phoneFormatted": "8 (044) 507-17-20",
+        "phone": "80445071720",
+        "address": "Pobediteley str. 9",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Bar, $$$",
+        "type": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.55618201, 53.90237076]
+      },
+      "properties": {
+        "title": "Grand Café",
+        "phoneFormatted": "8 (044) 703-11-11",
+        "phone": "80447031111",
+        "address": "Lenin str. 2",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "French Restaurant, $$$",
+        "type": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5427281, 53.901997]
+      },
+      "properties": {
+        "title": "Falcone",
+        "phoneFormatted": "8 (029) 377-77-76",
+        "phone": "80293777776",
+        "address": "Korolia str. 9",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Italian Restaurant, $$$",
+        "type": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5513112, 53.8997972]
+      },
+      "properties": {
+        "title": "Cafe de Paris",
+        "phoneFormatted": "8 029 129-11-11",
+        "phone": "80291291111",
+        "address": "Karl Marks str. 8",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "French Restaurant, $$$",
+        "type": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5499354, 53.9061907]
+      },
+      "properties": {
+        "title": "The View",
+        "phoneFormatted": "8 (044) 702-88-88",
+        "phone": "80447028888",
+        "address": "Pobediteley str. 7A",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Restaurant, $$$",
+        "type": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5807669, 53.912424]
+      },
+      "properties": {
+        "title": "Zerno",
+        "phoneFormatted": "8 (017) 271-32-63",
+        "phone": "80172713263",
+        "address": "Nezavisimosti str. 46",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Coffeepoint, $$",
+        "type": "coffeepoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.576208196395765, 53.9076572873122]
+      },
+      "properties": {
+        "title": "Moby Dick",
+        "phoneFormatted": "8 (029) 625-04-04",
+        "phone": "80296250404",
+        "address": "Zaharova str. 24",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Coffeepoint, $$",
+        "type": "coffeepoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5571003, 53.8971491]
+      },
+      "properties": {
+        "title": "Surf Coffee",
+        "phoneFormatted": "8 (033) 330-69-12",
+        "phone": "",
+        "address": "Kirova str. 19 2H",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Coffeepoint, $$",
+        "type": "coffeepoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5999897, 53.922143]
+      },
+      "properties": {
+        "title": "Kavka",
+        "phoneFormatted": "",
+        "phone": "",
+        "address": "Nezavisimosti 74 str. 19 2H",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Espresso-bar, $$",
+        "type": "coffeepoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5357213, 53.9161781]
+      },
+      "properties": {
+        "title": "World War 2 Museum",
+        "phoneFormatted": "8 (017) 327-11-66",
+        "phone": "80173271166",
+        "address": "Pobediteley str. 8",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Museum",
+        "type": "entertainment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5526384, 53.8900791]
+      },
+      "properties": {
+        "title": "Silver Screen",
+        "phoneFormatted": "8 (029) 621-68-86",
+        "phone": "80296216886",
+        "address": "Galileo Mall, Bobryiskaya str. 6",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Cinema",
+        "type": "entertainment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5593366, 53.9103077]
+      },
+      "properties": {
+        "title": "Opera and Ballet Theatre",
+        "phoneFormatted": "8 (017) 334-10-41",
+        "phone": "80173341041",
+        "address": "Paris Kommuna str. 1",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Opera Theater",
+        "type": "entertainment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5631255, 53.9038173]
+      },
+      "properties": {
+        "title": "Ў Contemporary Art Gallery",
+        "phoneFormatted": "8 (029) 366-75-16",
+        "phone": "80293667516",
+        "address": "October str. 19",
+        "city": "Minsk",
+        "country": "Belarus",
+        "postalCode": "220000",
+        "description": "Art Gallery, $",
+        "type": "entertainment"
+      }
+    }
+  ]
+}

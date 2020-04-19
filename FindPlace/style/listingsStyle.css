@@ -1,0 +1,126 @@
+#photoContainer-0 {
+    content:url('/img/photos/bars/alch/1.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-1 {
+    content:url('/img/photos/bars/huligan/2.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-2 {
+    content:url('/img/photos/bars/sweet/3.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-3 {
+    content:url('/img/photos/bars/id/4.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-4 {
+    content:url('/img/photos/bars/dot/5.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-5 {
+    content:url('/img/photos/restaurants/Grand/1.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-6 {
+    content:url('/img/photos/restaurants/Falcone/3.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-7 {
+    content:url('/img/photos/restaurants/CafedeParis/2.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-8 {
+    content:url('/img/photos/restaurants/TheView/4.jpeg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-9 {
+    content:url('/img/photos/coffeeoints/zerno/2.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-10 {
+    content:url('/img/photos/coffeeoints/mobydick/3.jpeg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-11 {
+    content:url('/img/photos/coffeeoints/surf/4.jpeg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-12 {
+    content:url('/img/photos/coffeeoints/kavka/1.jpeg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-13 {
+    content:url('/img/photos/entertainment/ww2/1.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-14 {
+    content:url('/img/photos/entertainment/silverscreen/2.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-15 {
+    content:url('/img/photos/entertainment/theatre/3.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+#photoContainer-16 {
+    content:url('/img/photos/entertainment/artgallery/4.jpg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+.infoContainer{
+    float:left;
+    margin: 0px;
+   
+}
+.photoContainer{
+    float:left;
+   
+}
+div{
+    overflow: hidden;
+}
+.infoContainer div {
+    font-size: 12px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+.infoContainer a {
+    margin-left: 5px;
+
+}
+.hide {
+    display:none;
+}
